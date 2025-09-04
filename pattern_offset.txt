@@ -1,0 +1,22 @@
+gef➤ python
+with open('/home/sgreva/Desktop/Challenges16/1_enc_pwn1/pat300', 'w') as f: f.write(gef.pattern.create(300))
+
+
+gef➤ run < pat300
+
+gef➤ pattern search 0x6261616b
+
+
+[PIU' GIUSTA]
+gef➤ python
+import gdb
+with open('/home/sgreva/Desktop/Challenges16/2_hi/pat300', 'w') as f:
+    f.write(gdb.execute('pattern create 300', to_string=True))
+    
+[SE ANDASSE]
+To find the distance between the return address and the buffer, we can insert a cyclic pattern into the buffer, and see what part of the pattern overrides the return address. Finding that specific offset of the pattern, we can understand the difference in bytes. We can do this using gdb-peda. 
+Since the buffer is 128 bytes long, let’s create a bigger pattern than that. Let’s try with 300, using the command pattern_create 300 pat300, which will create the pattern and save it in a file called pat300. Then, we can run the program giving in input the pattern using run < pat300.
+
+We can see the error is that the PC address (program counter or Instruction Pointer) is pointing to an invalid address, which corresponds to a piece of our pattern. To see the offset, we can run pattern_search.
+
+We can see that the pattern is contained in EIP, the register containing the next instruction to execute (PC and IP are the same thing), and it’s at offset 140 in our pattern. This means that there are exactly 140 bytes between the beginning of the buffer and the return address. Using these information, we are ready to write our exploitation script using pwntools:

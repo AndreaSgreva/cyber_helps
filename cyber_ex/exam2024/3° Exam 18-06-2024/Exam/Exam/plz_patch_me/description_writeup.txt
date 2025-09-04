@@ -1,0 +1,10 @@
+You can patch the binary and do whatever you want
+except taking the flag directly (yes, it is in clear).
+
+Report every step in the write-up!
+
+[write-up]
+- la risposta alla prima domanda trovata con IDA
+- tolto il rand() con dei NOP per avere sempre 0 come risposta giusta alla seconda domanda
+- cambiato il valore da 0x95 a 0x01 per avere la flag più velocemente
+

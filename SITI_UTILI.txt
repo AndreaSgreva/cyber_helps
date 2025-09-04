@@ -1,0 +1,21 @@
+[SITI UTILI]
+
+1) remove common JavaScript obfuscation techniques: https://deobfuscate.io/  oppure   http://jsnice.org/
+
+2) Base64 encode/decode: https://www.base64decode.org/
+
+3) CrackStation (sha,md5..): https://crackstation.net/
+
+4) MEGA: https://mega.nz/fm/qU9imSqB 
+
+5) CyberChef: https://gchq.github.io/CyberChef/
+
+6) binary decoder: https://seomagnifier.com/binary-decoder
+
+7) substitution ciphers: https://www.quipqiup.com/
+
+8) shdellcodes: https://shell-storm.org/shellcode/index.html
+
+9) SHA256: https://emn178.github.io/online-tools/sha256.html
+
+10) GitHub fontana: https://github.com/rpfontana/Cybersecurity

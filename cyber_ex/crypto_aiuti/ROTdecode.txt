@@ -1,0 +1,6 @@
+def ROTdecode(message, pos):
+    rot13_enc = ''
+    for c in message:
+        i = ALPHABET.index(c)
+        rot13_enc += ALPHABET[(i - pos)%LEN]
+    return rot13_enc

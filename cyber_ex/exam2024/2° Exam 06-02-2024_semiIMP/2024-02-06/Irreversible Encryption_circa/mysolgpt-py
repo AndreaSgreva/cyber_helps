@@ -1,0 +1,47 @@
+#!/usr/bin/env python3
+import base64
+import string
+import binascii
+
+ALPHABET = list(string.printable)  # len = 100
+LEN = len(ALPHABET)
+
+def ROTdecode(message, pos):
+    rot_dec = ''
+    for c in message:
+        i = ALPHABET.index(c)
+        rot_dec += ALPHABET[(i-pos) % LEN]
+    return rot_dec
+
+def XORdecode(message, KEY="c4mPar1"):
+    rep = len(message)//len(KEY) + 1
+    key = (KEY*rep)[:len(message)]
+    xored = ''.join([chr(ord(a) ^ ord(b)) for a,b in zip(message, key)])
+    return xored
+
+# ---- DECRYPT ----
+with open("encrypted_flag.txt", "r") as f:
+    hex_encrypted = f.read().strip()
+
+# 1) da hex a bytes
+xor_encrypted = binascii.unhexlify(hex_encrypted)
+
+# 2) bytes → string
+xor_encrypted = xor_encrypted.decode('ascii')
+
+# 3) XORdecode
+encrypted = XORdecode(xor_encrypted)
+
+# 4) ciclo inverso per 15 volte
+for _ in range(15):
+    step1 = ROTdecode(encrypted, 3)
+    step2 = base64.b32decode(step1).decode('ascii')
+    step3 = ROTdecode(step2, 13)
+    encrypted = base64.b64decode(step3).decode('ascii')
+
+# Risultato finale
+if encrypted.startswith("Encode as if there's no tomorrow: "):
+    flag = encrypted.split(": ", 1)[1]
+    print("FLAG:", flag)
+else:
+    print("Qualcosa non torna, risultato:", encrypted)

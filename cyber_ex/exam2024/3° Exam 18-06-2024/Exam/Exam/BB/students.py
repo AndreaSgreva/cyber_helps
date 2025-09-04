@@ -1,0 +1,31 @@
+import numpy as np
+
+def keygen():
+    key = np.random.randint(size = 1, low = 0, high =100000000)[0]
+    return key
+
+
+def mixer(message, key):
+    np.random.seed(key)
+    code = np.random.randint(size = 1, low = 50, high =100)[0]
+    return ''.join([chr(ord(x) ^ code) for x in message])
+
+
+with open("message.txt", "r") as file:
+    cipher = file.read()
+
+def brute_force_decrypt(ciphertext):
+    for code in range(50, 100):  # tutti i possibili valori
+        message = ''.join([chr(ord(x) ^ code) for x in ciphertext])
+        if "spritzCTF{" in message:
+            return message, code
+    return None, None
+
+
+flag, code = brute_force_decrypt(cipher)
+
+if flag:
+    print(f"[+] Trovata! code={code}")
+    print(flag)
+else:
+    print("Flag non trovata.")

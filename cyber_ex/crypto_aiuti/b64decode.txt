@@ -1,0 +1,1 @@
+decoded = base64.b64decode(rotated_back).decode('ascii', errors="ignore")

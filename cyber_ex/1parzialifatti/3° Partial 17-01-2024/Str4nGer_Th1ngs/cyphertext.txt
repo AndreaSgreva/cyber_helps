@@ -1,0 +1,25 @@
+--. .-. . .- - -.-.-. / -.-- --- ..- .----. ...- . / -.-. .-.. . .- .-. . -.. / - .... . / ..-. .. .-. ... - / ... - . .--. -.-.-. / .. / .... .- -.. / - --- / . -. -.-. .-. -.-- .--. - / - .... . / -- . ... ... .- --. . / - --- / .--. .-. . ...- . -. - / .. - / ..-. .-. --- -- / -... . .. -. --. / .. -. - . .-. -.-. . .--. - . -.. .-.-.- / -.-. --- -. - .. -. ..- . / - --- / -.. . -.-. .-. -.-- .--. - -.-.-.
+RmJ6cmd1dmF0IGpydmVxIHZmIHRidmF0IGJhIG5nIGd1ciB5dm9lbmVsLiBWIHpuYW50cnEgZ2IgdW5weCB2YWdiIG4gRWhmZnZuYSBzYmV6IFYgc2JoYXEgYmEgZ3VyIHl2b2VuZWwnZiBqcm9mdmdyLiBWIGd1dmF4IGd1cmwnZXIgaGZ2YXQgZ3VyIHl2b2VuZWwgbmYgbiBwYmlyZSBzYmUgemJlciBadmFxc3lubHJlIGVyZnJuZXB1LiBWIGFycnEgbGJoIGdiIHFycGJxciBndXIgenZmZnZhdCBjdnJwciEgTnlmYiwgem54ciBmaGVyIGdiIGhmciBndXZmIHVuZnVycSBmZ2V2YXQsIHZnIGZycnpmIHZnIHp2dHVnIHVyeWMgbGJoIHBlbnB4IGd1ciBhcmtnIGNuZWc6IDYxczY5MzNzMTc5cXMwcDYxcG9uMTAwOTk1cjdyb3JuCgpueHhtZ2QlN0JVeW5iZV9GaHJfSnl1cWtfVGJzJTdEJTBBCgoyOTY1NkM2MjYxNzQ3MjZGNjY2RDZGNjMyMDc0NjU2NzIwNjQ2RTYxMjA2QjZFNjk2QzIwNjU2ODc0MjA2NTc0NzM2MTcwMjgyMDQxMzk2QzY1Nzg3NzZBNDE1OTVBNTkzRDc2M0Y2ODYzNzQ2MTc3MkY2RDZGNjMyRTY1NjI3NTc0NzU2Rjc5MkU3Nzc3NzcyRjJGM0E3MzcwNzQ3NDY4MjAyMTY1Njk3QTc1NTMyMDc5NkM2NTc2NkY2QzIwNzk2RDIwNjQ2RTYxMjA2NTZEMjA3OTYyMjA2NDY1NkQ3MjZGNjY3MjY1NzAyMDY3NkU2RjczMjA3MzczNjU2QzY0NkU2NTIwNkU2MTIwNjU3NjcyNjU3MzY1NjQyMDc1NkY3OTIwMkM3MjYxNjYyMDczNjk2ODc0MjA3NDY5MjA2NTY0NjE2RDIwNjU3NjI3NzU2Rjc5MjA2NjQ5MjAyMTczNkU2RjY5NzQ2MTZDNzU3NDYxNzI2NzZFNkY0Mw==
+
+Fbzrguvat jrveq vf tbvat ba ng gur yvoenel. V znantrq gb unpx vagb n Ehffvna sbez V sbhaq ba gur yvoenel'f jrofvgr. V guvax gurl'er hfvat gur yvoenel nf n pbire sbe zber Zvaqsynlre erfrnepu. V arrq lbh gb qrpbqr gur zvffvat cvrpr! Nyfb, znxr fher gb hfr guvf unfurq fgevat, vg frrzf vg zvtug uryc lbh penpx gur arkg cneg: 61s6933s179qs0p61pon100995r7rorn
+
+nxxmgd{Uynbe_Fhr_Jyuqk_Tbs}
+
+29656C626174726F666D6F632074656720646E61206B6E696C20656874206574736170282041396C6578776A41595A593D763F68637461772F6D6F632E65627574756F792E7777772F2F3A7370747468202165697A755320796C65766F6C20796D20646E6120656D2079622064656D726F6672657020676E6F73207373656C646E65206E61206576726573656420756F79202C7261662073696874207469206564616D20657627756F792066492021736E6F6974616C75746172676E6F43
+
+
+
+[PLAINTEXT]
+
+GREAT; YOU'VE CLEARED THE FIRST STEP; I HAD TO ENCRYPT THE MESSAGE TO PREVENT IT FROM BEING 
+INTERCEPTED. CONTINUE TO DECRYPT;
+
+Something weird is going on at the library. I managed to hack into a Russian form I found on 
+the library's website. I think they're using the library as a cover for more Mindflayer research. 
+I need you to decode the missing piece! Also, make sure to use this hashed string, it seems it 
+might help you crack the next part: 61f6933f179df0c61cba100995e7ebea --> vigenere
+
+nxxmgd%7BUynbe_Fhr_Jyuqk_Tbs%7D%0A → nxxmgd{Uynbe_Fhr_Jyuqk_Tbs}\n
+che diventa con "vigenere" : spritz{Dusty_Bun_Suzie_Poo}
+
+

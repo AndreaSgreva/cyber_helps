@@ -1,0 +1,7 @@
+la prima parte di description e` un morse un po` inutile, la seconda parte sembra un base64 perche` termina con ==, quindi con cyberchef lo decifro usando from base 64, e trovo un testo che sembrerebbe un cifrario a sostituzione
+tramite https://www.guballa.de/substitution-solver lo risolvo e trovo il testo cornetto (bel typo, ve lo lascio)
+mi suggerisce di usare una stringa hashata come indizio, uso https://crackstation.net/ per dehasharla e vedo che hanno usato md5(vigenere)
+dopo aver provato vigenere su altre stringhe provo ad usare la stringa che avevo trovato con from base64: nxxmgd%7BUynbe_Fhr_Jyuqk_Tbs%7D%0A
+vedo che ha dei caratteri encodati come url, quindi uso url decode: nxxmgd{Uynbe_Fhr_Jyuqk_Tbs}
+uso https://www.dcode.fr/vigenere-cipher per crackare il vigenere, usando nxxmgd{Uynbe_Fhr_Jyuqk_Tbs} come testo e vigenere come chiave
+flag: spritz{Dusty_Bun_Suzie_Poo}
