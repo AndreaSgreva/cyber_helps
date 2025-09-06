@@ -1,0 +1,33 @@
+Soluzione
+Ci viene fornito un file "7Z". Per unzipparlo, seguire questi comandi:
+- sudo apt-get install p7zip-full (se non già presente ovviamente)
+- 7za x myfile.tar.7z
+- tar -xvf myfile.tar
+La flag è contenuta all'interno, quindi dobbiamo guardarlo all'interno. Se decomprimiamo la cartella,
+otteniamo una cartella chiamata "app". Se ispezioniamo il suo interno, possiamo vedere un file chiamato
+"application.py", un'applicazione Flask (uno dei pacchetti installati con Pip). Possiamo ad esempio eseguirla;
+apriamo un terminale e digitiamo: python application.py
+
+Cybersecurity semplice (per davvero)
+
+Scritto da Gabriel
+
+80
+
+Anche ispezionando cookie, codice, pagina o qualsiasi altra cosa, non
+spunta nulla di utile.
+Proviamo quindi ad ispezionare il codice Python presente nella
+cartella.
+Come si vede, all’interno dello script application.py si trova una ruote
+che indica una flag che inizia con encryptCTF:
+
+La chiamata getenv fa capire che nelle stesse cartelle di env dovremmo guardare qualcosa relativo ai
+commenti (il nome dell’esercizio è Slash Slash, quindi //)
+Proviamo a dare un’occhiata ai singoli file presenti in questa cartella.
+Andiamo a ispezionare il file di attivazione dell'ambiente virtuale, che è contenuto in "./env/bin/activate".
+L’ultima linea del file ha il seguente pezzo:
+
+Possiamo decrittare il messaggio sul terminale, scrivendo (rimpicciolito per motivi di spazio, ndr):
+echo "ZW5jcnlwdENURntjb21tZW50c18mX2luZGVudGF0aW9uc19tYWtlc19qb2hubnlfYV9nb29kX3Byb2dyYW1tZXJ9Cg==" | base64 -d
+In output otteniamo:
+encryptCTF{comments_&_indentations_makes_johnny_a_good_programmer}

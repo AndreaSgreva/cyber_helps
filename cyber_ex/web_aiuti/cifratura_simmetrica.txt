@@ -1,0 +1,1 @@
+alcuni es si fanno aprendo il debugger e traducendo le funzioni con siti, a volte ci sono algoritmi di cifratura simmetrici
