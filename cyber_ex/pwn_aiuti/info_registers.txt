@@ -1,0 +1,1 @@
+a volte negli info registers ho già i valori che cerco soltato che sono ad esempio in formato esadecimale

